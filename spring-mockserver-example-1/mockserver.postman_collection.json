@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "1902b77f-65a7-4f60-be9b-bd0b320b45d0",
+		"name": "mockserver",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "usuarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base-url}}/usuarios",
+					"host": [
+						"{{base-url}}"
+					],
+					"path": [
+						"usuarios"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "usuarios",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base-url}}/usuarios",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"usuarios"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\r\n    \"id\": 10,\r\n    \"nombre\": \"Ismael\"\r\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "bbb5a62e-bad5-4d35-aa0b-aa3bf56a88ee",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "38048e22-e6fc-46b4-85a2-62094806fa94",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "9f82115a-d50c-45da-8ec6-e26110cf19c1",
+			"key": "base-url",
+			"value": "https://902ba318-c7dd-4cf5-a737-fa4fc0527e9e.mock.pstmn.io"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
